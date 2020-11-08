@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logoMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mdplogo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvWellcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELAMAT DATANG"
+        android:textSize="10pt"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/logoMdp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_box"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:layout_below="@+id/etUsername"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWellcome"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edittext_box"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+
+        android:layout_marginRight="40dp"
+        android:hint="Username" />
+
+    <Button
+        android:id="@+id/btnBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATAL"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:onClick="onClickBatal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorDanger"
+        android:layout_toLeftOf="@+id/btnLogin"
+        android:layout_below="@+id/etPassword"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickLogin"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/etPassword"
+        android:stateListAnimator="@null"/>
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum Punya Akun ?         Dafar Disini"
+        android:background="@drawable/button_nav"
+        android:onClick="onClickDaftar"
+        android:layout_below="@id/btnBatal"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"/>
+    <Button
+        android:id="@+id/btnLupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUPA PASSWORD"
+        android:onClick="onClickLupa"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/btnCreateAccount"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"/>
+</RelativeLayout>
