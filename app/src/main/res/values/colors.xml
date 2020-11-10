@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007bff</color>
+
+    <color name="colorInfo">#ffc107</color>
+
+    <color name="colorSucces">#28a745</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorDanger">#FF0000</color>
+
+    <color name="themePrimaryColor">#263238</color>
+    <color name="themePrimaryLightColor">#4f5b62</color>
+    <color name="themePrimaryDarkColor">#000a12</color>
+    <color name="themePrimaryTextColor">#ffffff</color>
+</resources>
